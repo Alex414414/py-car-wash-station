@@ -28,6 +28,10 @@ class CarWashStation:
                      - car.clean_mark) * self.average_rating
                      / self.distance_from_city_center), 1)
 
+    '''method, that washes a single car,
+    so it should have "clean_mark" equals wash
+    station's "clean_power", if "wash_station.clean_power"
+    is greater than "car.clean_mark"'''
     def wash_single_car(self, car: Car) -> None:
         car.clean_mark = self.clean_power
 
